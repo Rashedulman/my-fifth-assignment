@@ -63,3 +63,13 @@ getElement('clear-btn').addEventListener('click', function(){
     const historyContainer = getElement('history-container')
     historyContainer.innerHTML = ""
 })
+
+// copy button function 
+getElement('service-box').addEventListener('click', function(e){
+    if(e.target.className.includes('copy-btn')){
+        const copyButton = e.target
+        const hotlineNumber = copyButton.parentNode.parentNode.children[1].children[2].innerText
+        
+        alert("The number has been copied: "+ hotlineNumber)
+    }
+})
