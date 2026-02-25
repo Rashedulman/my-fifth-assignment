@@ -13,19 +13,19 @@
     <header>
 
           <!-- navbar start here -->
-        <nav class="flex justify-between max-w-[1280px] mx-auto">
+        <nav class="flex flex-col md:flex-row justify-between max-w-[1280px] mx-auto ">
             <div class="flex">
-                <img src="./assets/logo.png" alt="" class="w-[50px]">
-                <h2 class="text-[#006747] font-bold">Emergency <br>Service </h2>
+                <img src="./assets/logo.png" alt="" class="w-10 h-10 md:w-12 md:h-12">
+                <h2 class="text-[#006747] font-bold md:text-base">Emergency <br class="hidden md:block">Service </h2>
             </div>
-            <div class="flex gap-10 justify-center ">
+            <div class="flex flex-wrap justify-center md:justify-end gap-3 ">
               <div class="w-[120px] h-[50px] p-[10px] bg-[#41ff6b1a] rounded-4xl flex justify-evenly">
                 <span id="available-heart">0</span>
-                <img src="./assets/heart.png" alt=""  class="w-[30px] h-[30px]">
+                <img src="./assets/heart.png" alt=""  class="w-5 h-5 md:w-6 md:h-6">
                 </div>
                 <div class="w-[120px] h-[50px] p-[10px] bg-[#41ff6b1a] rounded-4xl flex justify-evenly">
                 <span id="available-coin">100</span>
-                <img src="./assets/coin.png" alt=""  class="w-[30px] h-[30px]">
+                <img src="./assets/coin.png" alt=""  class="w-5 h-5 md:w-6 md:h-6">
                 </div>
                 <button  class="flex items-center justify-evenly w-[120px] h-[50px] p-[10px] bg-[#00A63E] rounded-4xl text-[#ffffff]
                 "><span id="copy-count">0</span>Copy</button>
@@ -34,9 +34,9 @@
         </nav>
              
                <!-- banner start here -->
-        <section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] h-[230px] mt-[10px] flex flex-col justify-center items-center  ">
-            <img src="./assets/logo.png" alt="" class="w-[90px] h-[90px]">
-            <h1 class="text-[40px] font-bold text-[#ffffff]">Emergency Service Directory</h1>
+        <section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-12 px-4 mt-3 flex flex-col justify-center items-center  ">
+            <img src="./assets/logo.png" alt="" class="w-16 h-16 md:w-20 md:h-20 mb-4">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#ffffff]">Emergency Service Directory</h1>
             <p class="text-[#ffffff] ">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
 
         </section>
