@@ -1,12 +1,4 @@
-// heart icon functionality 
 
-//  function increaseHeart(){
-//     const availableHeart = parseInt(document.getElementById("available-heart").innerText)
-
-//     const totalNewAvailableHeart = availableHeart + 1
-
-//     document.getElementById("available-heart").innerText=totalNewAvailableHeart
-// }
 
 
 
@@ -15,7 +7,7 @@ function getElement(id){
     const element = document.getElementById(id)
     return element
 }
-
+// heart icon functionality 
  function increaseHeart(){
     const availableHeart = parseInt(getElement("available-heart").innerText)
 
@@ -24,6 +16,7 @@ function getElement(id){
     getElement("available-heart").innerText=totalNewAvailableHeart
 }
 
+// call button functionality
 getElement('service-box').addEventListener('click', function(e){
     if(e.target.className.includes('call-btn')){
         // alert('cart button clicked')
@@ -63,4 +56,10 @@ getElement('service-box').addEventListener('click', function(e){
           historyContainer.append(newHistory)
 
     }
+})
+
+// clear button function 
+getElement('clear-btn').addEventListener('click', function(){
+    const historyContainer = getElement('history-container')
+    historyContainer.innerHTML = ""
 })
