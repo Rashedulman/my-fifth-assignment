@@ -69,7 +69,14 @@ getElement('service-box').addEventListener('click', function(e){
     if(e.target.className.includes('copy-btn')){
         const copyButton = e.target
         const hotlineNumber = copyButton.parentNode.parentNode.children[1].children[2].innerText
+
+        navigator.clipboard.writeText(hotlineNumber).then(function(){
+            alert("The number has been copied: "+ hotlineNumber)
+
+        })
         
-        alert("The number has been copied: "+ hotlineNumber)
+        const copyCount = getElement('copy-count').innerText
+        const currentCopyCount = Number(copyCount) + 1
+        getElement('copy-count').innerText = currentCopyCount
     }
 })
