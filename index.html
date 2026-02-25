@@ -24,10 +24,10 @@
                 <img src="./assets/heart.png" alt=""  class="w-[30px] h-[30px]">
                 </div>
                 <div class="w-[120px] h-[50px] p-[10px] bg-[#41ff6b1a] rounded-4xl flex justify-evenly">
-                <span>0</span>
+                <span id="available-coin">100</span>
                 <img src="./assets/coin.png" alt=""  class="w-[30px] h-[30px]">
                 </div>
-                <button class="flex items-center justify-evenly w-[120px] h-[50px] p-[10px] bg-[#00A63E] rounded-4xl text-[#ffffff]
+                <button  class="flex items-center justify-evenly w-[120px] h-[50px] p-[10px] bg-[#00A63E] rounded-4xl text-[#ffffff]
                 "><span>0</span>Copy</button>
 
             </div>
@@ -49,7 +49,7 @@
   <div class="grid  md:grid-cols-3 gap-6">
     
     <!-- Card Section -->
-    <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div id="service-box" class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       
       <!-- Card 1 -->
       <div class="bg-white rounded-2xl shadow p-4 flex flex-col justify-between">
@@ -58,14 +58,14 @@
           <span onclick="increaseHeart()"><i class="fa-regular fa-heart"></i></span>
         </div>
         <div class="flex flex-col  mt-4">
-          <h2 class="text-lg font-bold">National Emergency Number</h2>
+          <h2 class="text-lg font-bold service-name">National Emergency Number</h2>
           <p>National Emergency</p>
-          <p class="text-xl font-bold mt-2">999</p>
+          <p class="text-xl font-bold mt-2 service-number">999</p>
           <span>All</span>
         </div>
         <div class="flex justify-between mt-4">
           <button class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm py-2 mr-2 rounded-lg flex items-center justify-center gap-2"><span><i class="fa-regular fa-copy"></i></span> Copy</button>
-          <button class="flex-1 bg-green-500 hover:bg-green-600 text-white text-sm py-2 rounded-lg flex items-center justify-center gap-2"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+          <button class="flex-1 bg-green-500 hover:bg-green-600 text-white text-sm py-2 rounded-lg flex items-center justify-center gap-2 call-btn"><span><i class="fa-solid fa-phone"></i></span>Call</button>
         </div>
       </div>
       
@@ -76,14 +76,14 @@
          <span onclick="increaseHeart()"><i class="fa-regular fa-heart"></i></span>
         </div>
         <div class="flex flex-col  mt-4">
-          <h2 class="text-lg font-bold">Police Helpline Number</h2>
+          <h2 class="text-lg font-bold service-name">Police Helpline Number</h2>
           <p>Police</p>
-          <p class="text-xl font-bold mt-2">999</p>
+          <p class="text-xl font-bold mt-2 service-number">999</p>
           <span>Police</span>
         </div>
         <div class="flex justify-between mt-4">
           <button class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm py-2 mr-2 rounded-lg flex items-center justify-center gap-2"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
-          <button class="flex-1 bg-green-500 hover:bg-green-600 text-white text-sm py-2 rounded-lg flex items-center justify-center gap-2"><span><i class="fa-solid fa-phone"></i></span> Call</button>
+          <button class="flex-1 bg-green-500 hover:bg-green-600 text-white text-sm py-2 rounded-lg flex items-center justify-center gap-2 call-btn"><span><i class="fa-solid fa-phone"></i></span> Call</button>
         </div>
       </div>
       
@@ -94,14 +94,14 @@
           <span onclick="increaseHeart()"><i class="fa-regular fa-heart"></i></span>
         </div>
         <div class="flex flex-col  mt-4">
-          <h2 class="text-lg font-bold">Fire Service Number</h2>
+          <h2 class="text-lg font-bold service-name">Fire Service Number</h2>
           <p>Fire Service</p>
-          <p class="text-xl font-bold mt-2">999</p>
+          <p class="text-xl font-bold mt-2 service-number">999</p>
           <span>Fire</span>
         </div>
         <div class="flex justify-between mt-4">
           <button class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm py-2 mr-2 rounded-lg flex items-center justify-center gap-2"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
-          <button class="flex-1 bg-green-500 hover:bg-green-600 text-white text-sm py-2 rounded-lg flex items-center justify-center gap-2"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+          <button class="flex-1 bg-green-500 hover:bg-green-600 text-white text-sm py-2 rounded-lg flex items-center justify-center gap-2 call-btn"><span><i class="fa-solid fa-phone"></i></span>Call</button>
         </div>
       </div>
       
@@ -112,14 +112,14 @@
           <span onclick="increaseHeart()"><i class="fa-regular fa-heart"></i></span>
         </div>
         <div class="flex flex-col  mt-4">
-          <h2 class="text-lg font-bold">Ambulance Service</h2>
+          <h2 class="text-lg font-bold service-name">Ambulance Service</h2>
           <p>Ambulance</p>
-          <p class="text-xl font-bold mt-2">999</p>
+          <p class="text-xl font-bold mt-2 service-number">1994-999999</p>
           <span>Health</span>
         </div>
         <div class="flex justify-between mt-4">
           <button class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm py-2 mr-2 rounded-lg flex items-center justify-center gap-2"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
-          <button class="flex-1 bg-green-500 hover:bg-green-600 text-white text-sm py-2 rounded-lg flex items-center justify-center gap-2"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+          <button class="flex-1 bg-green-500 hover:bg-green-600 text-white text-sm py-2 rounded-lg flex items-center justify-center gap-2 call-btn"><span><i class="fa-solid fa-phone"></i></span>Call</button>
         </div>
       </div>
       
@@ -130,14 +130,14 @@
           <span onclick="increaseHeart()"><i class="fa-regular fa-heart"></i></span>
         </div>
         <div class="flex flex-col  mt-4">
-          <h2 class="text-lg font-bold">Women & Child Helpline</h2>
+          <h2 class="text-lg font-bold service-name">Women & Child Helpline</h2>
           <p>Women & Child Helpline</p>
-          <p class="text-xl font-bold mt-2">999</p>
+          <p class="text-xl font-bold mt-2 service-number">109</p>
           <span>Help</span>
         </div>
         <div class="flex justify-between mt-4">
           <button class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm py-2 mr-2 rounded-lg flex items-center justify-center gap-2"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
-          <button class="flex-1 bg-green-500 hover:bg-green-600 text-white text-sm py-2 rounded-lg flex items-center justify-center gap-2"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+          <button class="flex-1 bg-green-500 hover:bg-green-600 text-white text-sm py-2 rounded-lg flex items-center justify-center gap-2 call-btn"><span><i class="fa-solid fa-phone"></i></span>Call</button>
         </div>
       </div>
       
@@ -148,14 +148,14 @@
          <span onclick="increaseHeart()"><i class="fa-regular fa-heart"></i></span>
         </div>
         <div class="flex flex-col  mt-4">
-          <h2 class="text-lg font-bold">Anti-Corruption Helpline</h2>
+          <h2 class="text-lg font-bold service-name">Anti-Corruption Helpline</h2>
           <p>Anti-Corruption</p>
-          <p class="text-xl font-bold mt-2">999</p>
+          <p class="text-xl font-bold mt-2 service-number">106</p>
           <span>Govt.</span>
         </div>
         <div class="flex justify-between mt-4">
           <button class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm py-2 mr-2 rounded-lg flex items-center justify-center gap-2"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
-          <button class="flex-1 bg-green-500 hover:bg-green-600 text-white text-sm py-2 rounded-lg flex items-center justify-center gap-2"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+          <button class="flex-1 bg-green-500 hover:bg-green-600 text-white text-sm py-2 rounded-lg flex items-center justify-center gap-2 call-btn"><span><i class="fa-solid fa-phone"></i></span>Call</button>
         </div>
       </div>
       <!-- Card 7 -->
@@ -165,14 +165,14 @@
          <span onclick="increaseHeart()"><i class="fa-regular fa-heart"></i></span>
         </div>
         <div class="flex flex-col  mt-4">
-          <h2 class="text-lg font-bold">Electricity Helpliner</h2>
+          <h2 class="text-lg font-bold service-name">Electricity Helpliner</h2>
           <p>Electricity Outage</p>
-          <p class="text-xl font-bold mt-2">999</p>
+          <p class="text-xl font-bold mt-2 service-number">16216</p>
           <span>Electricity</span>
         </div>
         <div class="flex justify-between mt-4">
           <button class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm py-2 mr-2 rounded-lg flex items-center justify-center gap-2"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
-          <button class="flex-1 bg-green-500 hover:bg-green-600 text-white text-sm py-2 rounded-lg flex items-center justify-center gap-2"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+          <button class="flex-1 bg-green-500 hover:bg-green-600 text-white text-sm py-2 rounded-lg flex items-center justify-center gap-2 call-btn"><span><i class="fa-solid fa-phone"></i></span>Call</button>
         </div>
       </div>
       <!-- Card 8 -->
@@ -182,14 +182,14 @@
          <span onclick="increaseHeart()"><i class="fa-regular fa-heart"></i></span>
         </div>
         <div class="flex flex-col  mt-4">
-          <h2 class="text-lg font-bold">Brac Helpline</h2>
+          <h2 class="text-lg font-bold service-name">Brac Helpline</h2>
           <p>Brac</p>
-          <p class="text-xl font-bold mt-2">999</p>
+          <p class="text-xl font-bold mt-2 service-number">16445</p>
           <span>NGO</span>
         </div>
         <div class="flex justify-between mt-4">
           <button class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm py-2 mr-2 rounded-lg flex items-center justify-center gap-2"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
-          <button class="flex-1 bg-green-500 hover:bg-green-600 text-white text-sm py-2 rounded-lg flex items-center justify-center gap-2"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+          <button class="flex-1 bg-green-500 hover:bg-green-600 text-white text-sm py-2 rounded-lg flex items-center justify-center gap-2 call-btn"><span><i class="fa-solid fa-phone"></i></span>Call</button>
         </div>
         <!-- Card 9 -->
       </div>
@@ -199,14 +199,14 @@
          <span onclick="increaseHeart()"><i class="fa-regular fa-heart"></i></span>
         </div>
         <div class="flex flex-col  mt-4">
-          <h2 class="text-lg font-bold">Bangladesh Railway Helpline </h2>
+          <h2 class="text-lg font-bold service-name">Bangladesh Railway Helpline </h2>
           <p>Bangladesh Railway</p>
-          <p class="text-xl font-bold mt-2">999</p>
+          <p class="text-xl font-bold mt-2 service-number">163</p>
           <span>Travel</span>
         </div>
         <div class="flex justify-between mt-4">
           <button class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm py-2 mr-2 rounded-lg flex items-center justify-center gap-2"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
-          <button class="flex-1 bg-green-500 hover:bg-green-600 text-white text-sm py-2 rounded-lg flex items-center justify-center gap-2"><span><i class="fa-solid fa-phone"></i></span>Call</button>
+          <button class="flex-1 bg-green-500 hover:bg-green-600 text-white text-sm py-2 rounded-lg flex items-center justify-center gap-2 call-btn"><span><i class="fa-solid fa-phone"></i></span>Call</button>
         </div>
       </div>
       
@@ -220,9 +220,9 @@
         <button class="flex items-center justify-evenly w-[120px] h-[50px] p-[10px] bg-[#00A63E] rounded-4xl text-[#ffffff]
                 ">Clear</button>
       </div>
-      
-      
-      </ul>
+
+    <div id="history-container">
+
     </div>
     
   </div>
